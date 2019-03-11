@@ -9,19 +9,7 @@
     <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
     <meta name="author" content="gettemplates.co" />
 
-    <!--
-    //////////////////////////////////////////////////////
 
-    FREE HTML5 TEMPLATE
-    DESIGNED & DEVELOPED by FreeHTML5.co
-
-    Website: 		http://freehtml5.co/
-    Email: 			info@freehtml5.co
-    Twitter: 		http://twitter.com/fh5co
-    Facebook: 		https://www.facebook.com/fh5co
-
-    //////////////////////////////////////////////////////
-     -->
 
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content=""/>
@@ -324,58 +312,6 @@
                         <div class="desc">
                             <h3><a href="single.html">Sculptural Coffee Table</a></h3>
                             <span class="price">$960</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="fh5co-testimonial" class="fh5co-bg-section">
-        <div class="container">
-            <div class="row animate-box">
-                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                    <span>Testimony</span>
-                    <h2>Happy Clients</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="row animate-box">
-                        <div class="owl-carousel owl-carousel-fullwidth">
-                            <div class="item">
-                                <div class="testimony-slide active text-center">
-                                    <figure>
-                                        <img src="asset/images/person1.jpg" alt="user">
-                                    </figure>
-                                    <span>Jean Doe, via <a href="#" class="twitter">Twitter</a></span>
-                                    <blockquote>
-                                        <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimony-slide active text-center">
-                                    <figure>
-                                        <img src="images/person2.jpg" alt="user">
-                                    </figure>
-                                    <span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-                                    <blockquote>
-                                        <p>&ldquo;Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimony-slide active text-center">
-                                    <figure>
-                                        <img src="asset/images/person3.jpg" alt="user">
-                                    </figure>
-                                    <span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-                                    <blockquote>
-                                        <p>&ldquo;Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-                                    </blockquote>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
