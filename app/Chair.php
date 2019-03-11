@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Flight extends Model
+class Chair extends Model
 {
     //
 }
