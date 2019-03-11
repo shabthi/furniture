@@ -62,9 +62,12 @@
     <![endif]-->
 
 </head>
+
 <body>
 
 <div class="fh5co-loader"></div>
+
+
 
 <div id="page">
     <nav class="fh5co-nav" role="navigation">
@@ -72,6 +75,9 @@
             <div class="row">
                 <div class="col-md-3 col-xs-2">
                     <div id="fh5co-logo"><a href="{{url('/')}}">Home</a></div>
+                    <figure>
+                        <img src="asset/images/sofa1.png" alt="user" width="1200" height="400">
+                    </figure>
                 </div>
                 <div class="col-md-6 col-xs-6 text-center menu-1">
                     <ul>
@@ -144,7 +150,7 @@
                         </div>
                     </div>
                 </li>
-                <li style="background-image: url(images/img_bg_3.jpg);">
+                <li style="background-image: url(asset/images/img_bg_3.jpg);">
                     <div class="container">
                         <div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
                             <div class="slider-text-inner">
@@ -340,7 +346,7 @@
                             <div class="item">
                                 <div class="testimony-slide active text-center">
                                     <figure>
-                                        <img src="images/person1.jpg" alt="user">
+                                        <img src="asset/images/person1.jpg" alt="user">
                                     </figure>
                                     <span>Jean Doe, via <a href="#" class="twitter">Twitter</a></span>
                                     <blockquote>
