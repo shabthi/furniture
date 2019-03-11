@@ -14,5 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/chairs', 'ChairController@show');
+Route::get('/chairs', 'ChairController@home');
+Route::post('/chairsAll', 'ChairController@show');
+Route::post('/chairsSearch', 'ChairController@search');
+Route::post('/updatedPage', 'ChairController@update');
+
 Route::get('/tables', 'TableController@show');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+

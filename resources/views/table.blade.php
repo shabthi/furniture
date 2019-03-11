@@ -1,13 +1,13 @@
 @include('header')
 <html>
-<div>
+<div class="container">
 
     <figure>
         <img src="asset/images/sofa1.png" alt="user" width="1000" height="400">
     </figure>
 </div>
 
-<div>
+<div class="container">
     <table class="table">
         <thead>
         <tr>
