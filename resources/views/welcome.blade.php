@@ -73,6 +73,9 @@
     <div class="container">
         <div class="col-md-4">
             <div class="desc">
+                <figure>
+                <img src="asset/images/chair2.jpg    " alt="user" width="30%" height="100">
+            </figure>
                 <h3><a href="{{url('/chairs')}}">CHAIRS</a></h3>
 
             </div>
@@ -81,7 +84,10 @@
 
         <div class="col-md-4">
             <div class="desc">
-                <h3><a href="{{url('/tables')}}">TABLES</a></h3>
+                <figure>
+                    <img src="asset/images/sofa2.jpg" alt="user" width="30%" height="100%">
+                </figure>
+                <h3><a href="{{url('/tables')}}">SOFAS</a></h3>
 
             </div>
         </div>
@@ -90,7 +96,7 @@
         <div class="col-md-4">
             <div class="desc">
                 <figure>
-                    <img src="asset/images/sofa1.png" alt="user" width="30%" height="100%">
+                    <img src="asset/images/cupboard1.jpg" alt="user" width="30%" height="100%">
                 </figure>
                 <h3><a href="{{url('/cupboards')}}">CUPBOARDS</a></h3>
 
@@ -102,17 +108,26 @@
 <div class="container">
     <div class="col-md-4">
         <div class="desc">
+            <figure>
+                <img src="asset/images/bed1.png    " alt="user" width="35%" height="90">
+            </figure>
+            <h3><a href="{{url('/tables')}}">BEDS</a></h3>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="desc">
+            <figure>
+                    <img src="asset/images/table1.jpg" alt="user" width="30%" height="100%">
+                </figure>
             <h3><a href="{{url('/tables')}}">TABLES</a></h3>
         </div>
     </div>
     <div class="col-md-4">
         <div class="desc">
-            <h3><a href="{{url('/tables')}}">TABLES</a></h3>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="desc">
-            <h3><a href="{{url('/tables')}}">TABLES</a></h3>
+            <figure>
+                    <img src="asset/images/drawers1.png" alt="user" width="30%" height="100%">
+                </figure>
+            <h3><a href="{{url('/tables')}}">DRAWERS</a></h3>
         </div>
     </div>
 </div>
