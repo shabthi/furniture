@@ -17,7 +17,7 @@ class BedController extends Controller
 {
     public function show(){
         $beds = DB::table('beds')->get();
-        return view('beds')->with('beds', $bedss);
+        return view('beds')->with('beds', $beds);
     }
     public function home(){
         $beds = null;

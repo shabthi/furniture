@@ -43,12 +43,12 @@
 </div>
 
 <div class="container">
-    <form action="{{url('/updatedPage')}}" method="post" enctype="multipart/form-data">
+    <form  method="post" enctype="multipart/form-data">
         {{ csrf_field() }}
         <input type="text" name="search">
         <button type="submit" name="searchbtn" class="btn-primary" formaction="{{url('/chairsSearch')}}" formenctype="multipart/form-data">Search</button>
         <button type="submit" name="view" class="btn-primary" formaction="{{url('/chairsAll')}}" formenctype="multipart/form-data">View All</button>
-
+</form>
       @if($chairs!=null)
 
         <table class="table">
@@ -69,22 +69,91 @@
         <th scope="row">{{$c->id}}</th>
         <td>{{$c->type}}</td>
         <td><input type="text" name="model" value="{{$c->model}}"></td>
-        <td><input type="number" step="0.01" name="price" value="{{$c->price}}"></td>
-        <td><input type="number" name="stock" value="{{$c->stock}}"></td>
-        <td><button class="btn btn-primary" type="submit" onclick="openForm()">BUY</button></td>
+        <td><input type="number" step="0.01" id="price" name="price" value="{{$c->price}}"></td>
+        <td><input type="number" id="stock" name="stock" value="{{$c->stock}}"></td>
+        
     </tr>
 
-    @endforeach
+   
 
     </tbody>
+    
             @if(count($chairs)==1)
-            <tr><td></td><td></td><td></td><td></td><td></td><td><button class="btn btn-primary" type="submit" formaction="{{url('/updatedPage')}}"name="update" >Update</button></td></tr>
-                @endif
+            <tr><td></td><td></td><td></td><td></td><td></td><td><button class="btn btn-primary" name="buy" id="openReciept">BUY</button><button class="btn btn-primary" type="submit" formaction="{{url('/updatedPage')}}"name="update" >Update</button></td></tr>
+            
+           @endif
 
     </table>
 
-@endif
-    </form>
+
+    
 </div>
+<div id="recieptModal" class="modal" >
+<div class="modal-content">
+<div class="container">
+<span class="close">&times;</span>
+<h3>Payment Reciept</h3>
+<form action="{{url('/buyUpdate')}}" method="post">
+{{ csrf_field() }}
+<table class="table">
+<tr>
+<td><label for="model">MODEL</td><td><input type="text" name="model" value="{{$c->model}}"></td>
+</tr>
+<tr>
+<td><label for="number">Quantity</td><td><input type="text" name="quantity" oninput="setQuantity()" id="quantity"></td>
+</tr>
+<tr>
+<td><label for="amount">Total Amount</td><td><input type="text" name="amount" id="amount"></td>
+</tr>
+<tr><td></td><td><input type="submit" name="reciept" ></td></tr>
+</table>
+</form>
+</div>
+</div>
+</div>
+
+@endforeach
+@endif
 </html>
 
+<script>
+// Get the modal
+var modal = document.getElementById("recieptModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("openReciept");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function setQuantity(){
+    var x = document.getElementById("quantity").value;
+    var price = document.getElementById("price").value;
+    var total=x*price;
+    document.getElementById("amount").value = "Rs." + total;
+}
+function buy(){
+    var buyingQuantity = document.getElementById("quantity").value;
+    var oldQuantity = document.getElementById("stock").value;
+    var newQuantity = oldQuantity - buyingQuantity;
+    document.getElementById("stock").value = newQuantity;
+}
+
+</script>

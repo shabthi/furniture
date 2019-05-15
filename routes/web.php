@@ -18,6 +18,7 @@ Route::get('/chairs', 'ChairController@home');
 Route::post('/chairsAll', 'ChairController@show');
 Route::post('/chairsSearch', 'ChairController@search');
 Route::post('/updatedPage', 'ChairController@update');
+Route::post('/buyUpdate', 'ChairController@buyUpdate');
 
 Route::get('/tables', 'TableController@show');
 Auth::routes();

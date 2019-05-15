@@ -34,11 +34,22 @@ class ChairController extends Controller
 
         DB::table('chairs')->where('model',$model)->update(['stock'=>$_POST['stock']]);
 
-
-
-
         $chairs = DB::table('chairs')->get();
         return view('chairs')->with('chairs', $chairs);
     }
+    public function buyUpdate(){
+
+        $model = $_POST['model'];
+        $chairs = App\Chair::where('model', $model)->first();
+        
+        echo $chairs;
+        //$stock = $chair['stock'];
+        //$newStock = $_POST['stock'] - $stock;
+        //DB::table('chairs')->where('model',$model)->update(['stock'=>$newStock]);
+
+        $chairs = DB::table('chairs')->get();
+        //return view('chairs')->with('chairs', $chairs);
+    }
+
 
 }
